@@ -5,6 +5,8 @@ const kWhite = Colors.white;
 const kGray = Colors.grey;
 const kRed = Colors.red;
 
+const userlogin = 'logincheck';
+
 const kHeight10 = SizedBox(
   height: 10,
 );

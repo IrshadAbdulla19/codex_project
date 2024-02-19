@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:irshad_codex/core/constants.dart';
 import 'package:irshad_codex/presentation/login/login_screen.dart';
@@ -29,9 +31,23 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
+  // Future<void> loginCheak() async {
+  //   final sharepref = await SharedPreferences.getInstance();
+  //   final userLogedin = sharepref.getBool(userlogin);
+  //   if (userLogedin == null || userLogedin == false) {
+  //     forNAvigation();
+  //   } else {
+  //     await Future.delayed(const Duration(seconds: 4));
+  //     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (cntx1) {
+  //       // ignore: prefer_const_constructors
+  //       return LandingScreen();
+  //     }));
+  //   }
+  // }
+
   forNAvigation() async {
     await Future.delayed(const Duration(seconds: 4));
-    // ignore: use_build_context_synchronously
+
     Navigator.pushReplacement(context, MaterialPageRoute(
       builder: (context) {
         return const LoginScreen();
