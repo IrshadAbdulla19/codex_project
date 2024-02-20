@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:irshad_codex/core/constants.dart';
 import 'package:irshad_codex/presentation/landing/landing_screen.dart';
 import 'package:irshad_codex/presentation/widgets/commen_text_widgets.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
